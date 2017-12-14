@@ -1,0 +1,22 @@
+<form #formErrors='ngForm' (submit)="create(player)">
+<label>Name:
+    <input
+    type="text"
+    name="player.name"
+    required
+    [(ngModel)]='player.name'
+    #name='ngModel'
+    minlength ="[5, 'Name must more than 5 characters']">
+    <span *ngIf='name.errors'>A Name is required. </span><br>
+</label>
+
+<label>Position:
+    <input
+     type="text"
+     [(ngModel)]="player.position" 
+     name="player.position"
+     ><br>
+</label>
+    <input type="submit" value="ADD">
+
+</form>
