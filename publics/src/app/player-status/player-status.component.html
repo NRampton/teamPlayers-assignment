@@ -8,65 +8,65 @@
 
 
 <div *ngIf="num == 1">
-<div *ngFor="let player of players">
-    <p>{{player.name}}</p>
-    <button
-    (click)='changeStatus(player._id, "game1", "Playing")'
-    type="button"
-    [ngClass]="{ blue: player.game1 === 'Playing'}"
-    >Playing</button>
+    <div *ngFor="let player of players">
+        <p>{{player.name}}</p>
+        <button
+        (click)='changeStatus(player._id, "game1", "Playing")'
+        type="button"
+        [ngClass]="{ blue: player.game1 === 'Playing'}"
+        >Playing</button>
 
-    <button
-    (click)='changeStatus(player._id, "game1", "Not Playing")' type="button"
-    [ngClass]="{ red : player.game1 === 'Not Playing'}">
-    Not Playing</button>
+        <button
+        (click)='changeStatus(player._id, "game1", "Not Playing")' type="button"
+        [ngClass]="{ red : player.game1 === 'Not Playing'}">
+        Not Playing</button>
 
-    <button
-    (click)='changeStatus(player._id, "game1", "Undecided")'
-    type="button"
-    [ngClass]="{ yellow : player.game1 === 'Undecided'}">
-    Undecided</button>
-</div>
+        <button
+        (click)='changeStatus(player._id, "game1", "Undecided")'
+        type="button"
+        [ngClass]="{ yellow : player.game1 === 'Undecided'}">
+        Undecided</button>
+    </div>
 </div>
 <div *ngIf="num == 2">
-<div *ngFor="let player of players" class="row">
-        <p>{{player.name}}</p>
-    <button
-    (click)='changeStatus(player._id, "game2", "Playing")'
-    type="button"
-    [ngClass]="{ blue: player.game2 === 'Playing'}"
-    >Playing</button>
+    <div *ngFor="let player of players" class="row">
+            <p>{{player.name}}</p>
+        <button
+        (click)='changeStatus(player._id, "game2", "Playing")'
+        type="button"
+        [ngClass]="{ blue: player.game2 === 'Playing'}"
+        >Playing</button>
 
-    <button
-    (click)='changeStatus(player._id, "game2", "Not Playing")' type="button"
-    [ngClass]="{ red : player.game2 === 'Not Playing'}">
-    Not Playing</button>
+        <button
+        (click)='changeStatus(player._id, "game2", "Not Playing")' type="button"
+        [ngClass]="{ red : player.game2 === 'Not Playing'}">
+        Not Playing</button>
 
-    <button
-    (click)='changeStatus(player._id, "game2", "Undecided")'
-    type="button"
-    [ngClass]="{ yellow : player.game2 === 'Undecided'}">
-    Undecided</button>
-</div>
+        <button
+        (click)='changeStatus(player._id, "game2", "Undecided")'
+        type="button"
+        [ngClass]="{ yellow : player.game2 === 'Undecided'}">
+        Undecided</button>
+    </div>
 </div>
 <div *ngIf="num == 3">
-<div *ngFor="let player of players" class="row">
-        <p>{{player.name}}</p>
-    <button
-    (click)='changeStatus(player._id, "game3", "Playing")'
-    type="button"
-    [ngClass]="{ blue: player.game3 === 'Playing'}"
-    >Playing</button>
+    <div *ngFor="let player of players" class="row">
+            <p>{{player.name}}</p>
+        <button
+        (click)='changeStatus(player._id, "game3", "Playing")'
+        type="button"
+        [ngClass]="{ blue: player.game3 === 'Playing'}"
+        >Playing</button>
 
-    <button
-    (click)='changeStatus(player._id, "game3", "Not Playing")' type="button"
-    [ngClass]="{ red : player.game3 === 'Not Playing'}">
-    Not Playing</button>
+        <button
+        (click)='changeStatus(player._id, "game3", "Not Playing")' type="button"
+        [ngClass]="{ red : player.game3 === 'Not Playing'}">
+        Not Playing</button>
 
-    <button
-    (click)='changeStatus(player._id, "game3", "Undecided")'
-    type="button"
-    [ngClass]="{ yellow : player.game3 === 'Undecided'}">
-    Undecided</button>
-</div>
+        <button
+        (click)='changeStatus(player._id, "game3", "Undecided")'
+        type="button"
+        [ngClass]="{ yellow : player.game3 === 'Undecided'}">
+        Undecided</button>
+    </div>
 </div>
